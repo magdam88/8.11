@@ -1,9 +1,10 @@
 var add = document.getElementById('addElem');
 var list = document.getElementById('Lista');
-  var itemsByTagName = document.getElementsByTagName('li');
-var number = itemsByTagName.lenght;
+var itemsByTagName = document.getElementsByTagName('li');
 
-add.addEventListener('click', function() {
-  list.innerHTML += '<li>item</li>' + number;
- 
+
+add.addEventListener('click', function () {
+    var number = itemsByTagName.length;
+    list.innerHTML += '<li>item</li>' + number;
+
 });
