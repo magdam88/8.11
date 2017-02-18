@@ -5,6 +5,6 @@ var itemsByTagName = document.getElementsByTagName('li');
 
 add.addEventListener('click', function () {
     var number = itemsByTagName.length;
-    list.innerHTML += '<li>item</li>' + number;
+    list.innerHTML += '<li>item' + number + '</li>';
 
 });
